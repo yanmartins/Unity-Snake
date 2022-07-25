@@ -6,12 +6,16 @@ public class Snake : MonoBehaviour
 {
     private List<Transform> segments = new List<Transform>();
     public Transform segmentPrefab;
+    public Transform head;
     public Vector2 direction = Vector2.right;
     private Vector2 input;
+
     public int initialSize = 4;
+    private Quaternion inicialRotation = Quaternion.Euler(0, 0, 180);
 
     private void Start()
     {
+        head.rotation = inicialRotation;
         ResetState();
     }
 
@@ -22,8 +26,10 @@ public class Snake : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
                 input = Vector2.up;
+                head.rotation = Quaternion.Euler(0, 0, -90);
             } else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
                 input = Vector2.down;
+                head.rotation = Quaternion.Euler(0, 0, 90);
             }
         }
         // Only allow turning left or right while moving in the y-axis
@@ -31,8 +37,10 @@ public class Snake : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
                 input = Vector2.right;
+                head.rotation = Quaternion.Euler(0, 0, 180);
             } else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
                 input = Vector2.left;
+                head.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
     }
