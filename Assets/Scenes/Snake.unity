@@ -138,9 +138,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Head
       objectReference: {fileID: 0}
+    - target: {fileID: 3498510568681144246, guid: 0957d358a3ce09849b8a033c742f7ca7, type: 3}
+      propertyPath: m_Name
+      value: Eye
+      objectReference: {fileID: 0}
     - target: {fileID: 3847942095025398718, guid: 0957d358a3ce09849b8a033c742f7ca7, type: 3}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472256099250572300, guid: 0957d358a3ce09849b8a033c742f7ca7, type: 3}
+      propertyPath: m_Name
+      value: Pupil
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084180472143011969, guid: 0957d358a3ce09849b8a033c742f7ca7, type: 3}
+      propertyPath: m_Name
+      value: Pupil
       objectReference: {fileID: 0}
     - target: {fileID: 8810414246308271410, guid: 0957d358a3ce09849b8a033c742f7ca7, type: 3}
       propertyPath: m_SortingOrder
@@ -544,6 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentPrefab: {fileID: 4726879341727194397, guid: a20ea67b69b1572478630ab80ef547fd, type: 3}
+  segmentPrefab2: {fileID: 4726879341727194397, guid: 505c9533570c60d438108792d4eef715, type: 3}
   head: {fileID: 1391000481}
   direction: {x: 1, y: 0}
   initialSize: 4
