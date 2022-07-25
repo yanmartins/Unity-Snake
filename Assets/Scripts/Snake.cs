@@ -5,7 +5,11 @@ using UnityEngine;
 public class Snake : MonoBehaviour
 {
     private List<Transform> segments = new List<Transform>();
+
     public Transform segmentPrefab;
+    public Transform segmentPrefab2;
+    private bool flagColor = false;
+
     public Transform head;
     public Vector2 direction = Vector2.right;
     private Vector2 input;
@@ -69,7 +73,16 @@ public class Snake : MonoBehaviour
 
     public void Grow()
     {
-        Transform segment = Instantiate(segmentPrefab);
+        Transform segment;
+        if (flagColor)
+        {
+            segment = Instantiate(segmentPrefab);
+            flagColor = !flagColor;
+        }
+        else { 
+            segment = Instantiate(segmentPrefab2);
+            flagColor = !flagColor;
+        }
         segment.position = segments[segments.Count - 1].position;
         segments.Add(segment);
     }
