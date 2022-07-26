@@ -8,10 +8,10 @@
 
 ## Atalhos
 
-- [Prefabs](Assets\Prefabs)
-- [Scenes](Assets\Scenes)
-- [Scripts](Assets\Scripts)
-- [Sprites](Assets\Sprites)
+- [Prefabs](Assets/Prefabs)
+- [Scenes](Assets/Scenes)
+- [Scripts](Assets/Scripts)
+- [Sprites](Assets/Sprites)
 
 ## Pré-requisitos
 
