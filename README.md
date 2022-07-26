@@ -13,9 +13,9 @@
 - [Scripts](Assets/Scripts)
 - [Sprites](Assets/Sprites)
 
-## Pré-requisitos
+## Tecnologias
 
-- **Versão:** Unity 2020.3.22f1 LTS
+- Unity 2020.3.22f1 LTS
 
 ## Fontes
 
