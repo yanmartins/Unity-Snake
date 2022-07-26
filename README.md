@@ -1,6 +1,8 @@
 # Snake (2D)
 
-![](images\UnitySnake.gif)
+<p align="center">
+  <img src="images/UnitySnake.gif">
+</p>
 
 > Snake é o nome comum para um conceito de videogame em que o jogador manobra uma linha que cresce em comprimento, com a própria linha sendo o principal obstáculo. O conceito se originou no jogo de arcade Blockade de 1976, e a facilidade de implementação do Snake levou a centenas de versões (algumas das quais têm a palavra snake ou worm no título) para muitas plataformas. Depois que uma variante foi pré-instalada nos telefones celulares da Nokia em 1998, houve um ressurgimento do interesse no conceito de snake, devido o encontro com um público maior. [*Fonte*](https://en.wikipedia.org/wiki/Snake_(video_game_genre))
 
